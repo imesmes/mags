@@ -1,0 +1,10 @@
+- content_for :ethon do
+  = javascript_include_tag 'mags/player'
+  = javascript_include_tag 'mags/child'
+  = javascript_include_tag 'mags/candy'
+  = javascript_include_tag 'mags/config'
+  = javascript_include_tag 'mags/main'
+
+#wrapper
+  %canvas{:id => "game", :width => "700", :height => "700"}
+    = image_tag '../javascripts/mags/sprites/incompatible_browser.png'

@@ -1,0 +1,10 @@
+!!! Strict
+%html
+  %head
+    %title Mags
+    = stylesheet_link_tag 'styles'
+    = javascript_include_tag_for_ethon
+    = csrf_meta_tag
+    = yield :ethon
+  %body
+    = yield
